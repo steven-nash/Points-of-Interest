@@ -1,0 +1,126 @@
+/*
+ Points of Interest
+ Steven Nash
+ 2025/04/16
+ */
+
+/* Fit page to browser */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Set the size of the map to the entire page */
+  #map {
+    height: 100%;
+  }
+
+/* Center and change font of the title and info for search locations */
+  .locationInfo, .locationTitle {
+    text-align: center;
+    font: 400 18px Roboto, Arial, sans-serif;
+  }
+
+  /* Format the welcome message header and subheader */
+  .welcome-header {
+    text-align: center;
+  }
+
+  /* Center and change font for the address for a search location */
+  .address {
+    text-align: center;
+    font: 300 15px Roboto, Arial, sans-serif;
+  }
+
+  /* Format the welcome message */
+  #welcome-content {
+    font: 300 14px Roboto, Arial, sans-serif;
+  }
+
+  /* Style the select box and search button to match the rest of the UI */
+  #streetViewButton, .custom-map-control-select, .custom-map-control-button, #prev-button, #next-button, #directionsButton, .geoloc-button, .info-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  /* Style the directions method selector to match the rest of the UI */
+  #directionsSelector {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  /* Style the search box */
+  .search-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: Roboto, sans-serif;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  /* Position the street view and directions buttons div */
+  #location-buttons {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 20px;
+  }
+
+/* Set the margins for the street view and directions buttons */
+  #streetViewButton, #directionsButton {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* Position the Next button */
+  #next-button {
+    display: block;
+    float: right;
+  }
+
+  /* Add the image to the geolocation button */
+  .geoloc-button {
+    width: 40px;
+    background-image: url('/assets/geoloc_button.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 5px;
+  }
+
+  /* Add the image to the info button */
+  .info-button {
+    width: 40px;
+    background-image: url('/assets/info_button.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 5px;
+  }
+
+/* Change the colour of the search and geolocation buttons on hover */
+  .custom-map-control-button:hover {
+    background: rgb(235, 235, 235);
+  }
